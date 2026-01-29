@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BattleController">
+   <children>
+      <ImageView fx:id="enemyImageView" fitHeight="200.0" fitWidth="200.0" layoutX="202.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="playerStatusLabel" editable="false" prefHeight="230.0" prefWidth="160.0" text="">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></TextArea>
+      <TextArea fx:id="enemyStatusLabel" editable="false" layoutX="440.0" prefHeight="230.0" prefWidth="160.0" text="">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font></TextArea>
+      <Button fx:id="hpPotionBtn" layoutX="106.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleHpPotion" text="1. HP_POTION">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Button>
+      <Button fx:id="mpPotionBtn" layoutX="244.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleMpPotion" text="2. MP_POTION">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Button>
+      <Button fx:id="cloakBtn" layoutX="385.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleCloak" prefHeight="23.0" prefWidth="109.0" text="3. CLOAK">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Button>
+      <Button fx:id="basicAttackBtn" layoutX="155.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleBasicAttack" prefWidth="120.0" text="Basic Attack">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="skillBtn" layoutX="325.0" layoutY="289.0" mnemonicParsing="false" onAction="#handleSkill" prefWidth="120.0" text="skill">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

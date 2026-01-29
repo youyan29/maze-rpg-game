@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="-115.60711669921875" endY="-206.0" layoutX="249.0" layoutY="206.0" startX="-115.60711669921875" startY="71.5" />
+      <Line endX="-23.100006103515625" endY="-256.0" layoutX="256.0" layoutY="256.0" startX="-122.50003051757812" startY="21.0" />
+      <Line endX="17.892868041992188" layoutX="115.0" layoutY="278.0" startX="-115.00000762939453" />
+      <Line endX="-101.39291381835938" endY="-213.7071075439453" layoutX="563.0" layoutY="213.0" startX="-101.39291381835938" startY="60.5999755859375" />
+      <Line endX="-139.49996948242188" endY="-255.0" layoutX="518.0" layoutY="255.0" startX="-57.100006103515625" startY="17.89288330078125" />
+      <Line endX="36.0" layoutX="562.0" layoutY="273.0" startX="-100.39288330078125" startY="0.600006103515625" />
+      <Button layoutX="268.0" layoutY="80.0" mnemonicParsing="false" onAction="#handleForward" text="Forward" />
+      <Button layoutX="55.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleLeft" text="Left" />
+      <Button layoutX="500.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleRight" text="Right" />
+      <Button layoutX="275.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleBack" text="back" />
+      <Label fx:id="moveInfoLabel" layoutX="297.0" layoutY="276.0" visible="false" />
+   </children>
+</AnchorPane>
