@@ -272,14 +272,16 @@ public class MazeRandom implements MazeAPI{
     private MazeEvent tryRandomEvents(Character player) {
 
         // enemy
-        if (rand.nextInt(enemyChance) == 0) {
+        int enemy_chance = enemyChance + player.getDex() * 2;
+        if (rand.nextInt(enemy_chance) == 0) {
         	resetEnemyRate();
             return new MazeEvent("enemy", randomEnemy());
         }
         else increaseEnemyRate();
 
         // reward
-        if (rand.nextInt(rewardChance) == 0) {
+        int reward_chance = rewardChance + player.getDex() * 2;
+        if (rand.nextInt(reward_chance) == 0) {
         	resetRewardRate();
         	Item reward = Item.getRandomItem();
             Item.ItemType type = reward.getType();
